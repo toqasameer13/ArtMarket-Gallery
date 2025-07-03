@@ -1,0 +1,242 @@
+/* Artwork Preview Styles */
+.artwork-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  
+  .artwork-card {
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .artwork-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .artwork-image {
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .artwork-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .artwork-details {
+    padding: 1rem;
+  }
+  
+  .artwork-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .artwork-description {
+    font-size: 0.875rem;
+    color: #4b5563;
+    margin-bottom: 1rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  .artwork-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .meta-item {
+    display: flex;
+    align-items: baseline;
+    font-size: 0.875rem;
+  }
+  
+  .meta-label {
+    font-weight: 500;
+    margin-right: 0.5rem;
+    color: #6b7280;
+  }
+  
+  .meta-value {
+    color: #111827;
+  }
+  
+  .meta-value.price {
+    font-weight: 600;
+    color: #047857;
+  }
+    
+  .meta-value.auctionStartTime {
+    font-weight: 600;
+    color: #787604;
+  }  
+  .meta-value.auctionEndTime {
+    font-weight: 600;
+    color: #780404;
+  }
+  
+  .tags-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+  }
+  
+  .tag {
+    background-color: #f3f4f6;
+    padding: 0.125rem 0.5rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+  }
+  
+  .price-edit-form {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .price-input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.375rem;
+  }
+  
+  .edit-actions {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 3rem 1rem;
+    color: #6b7280;
+  }
+  
+  .btn-sm {
+    padding: 0.375rem 0.75rem;
+    font-size: 0.875rem;
+  }
+  
+  .capitalize {
+    text-transform: capitalize;
+  }
+  .artwork-status {
+    font-weight: bold;
+    padding: 6px 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    display: inline-block;
+  }
+  
+  .status-approved {
+    background-color: #d4edda;
+    color: #155724;
+  }
+  
+  .status-pending {
+    background-color: #fff3cd;
+    color: #856404;
+  }
+  
+  .status-rejected {
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+  
+  .extend-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .extend-form input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 150px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .extend-form input:focus {
+    border-color: #6c63ff;
+    outline: none;
+  }
+  
+  .extend-form button {
+    padding: 10px 20px;
+    background-color: #6c63ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .extend-form button:hover {
+    background-color: #5a54e6;
+  }
+  
+  button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #3c7b77;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #357d6e;
+  }
+  
+
+  .artwork-actions {
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .btn-edit, .btn-delete {
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    border: none;
+  }
+  
+  .btn-edit {
+    background-color: #f0ad4e;
+    color: white;
+  }
+  
+  .btn-delete {
+    background-color: #d9534f;
+    color: white;
+  }
+  .btn-edit i,
+.btn-delete i {
+  margin-right: 5px;
+  vertical-align: middle;
+}

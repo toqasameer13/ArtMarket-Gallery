@@ -1,0 +1,148 @@
+/* Container */
+.edit-container {
+    max-width: 700px;
+    margin: 50px auto;
+    background: #fdfdfd; /* خلفية بيضاء */
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+    font-family: "Segoe UI", sans-serif;
+    color: #333; /* جعل النص داكن لزيادة التباين */
+}
+
+/* Title */
+.edit-container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #222; /* لون داكن للنص */
+}
+
+/* Form */
+.edit-form label {
+    display: block;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #333; /* لون النص */
+}
+
+.edit-form input[type="text"],
+.edit-form input[type="number"],
+.edit-form input[type="datetime-local"],
+.edit-form textarea,
+.edit-form select {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    margin-top: 8px;
+    font-size: 15px;
+    background-color: #fefefe; /* خلفية فاتحة جدًا */
+    color: #333; /* النص بلون داكن */
+    transition: border 0.2s ease-in-out;
+}
+
+.edit-form input:focus,
+.edit-form textarea:focus,
+.edit-form select:focus {
+    border-color: #007bff;
+    outline: none;
+    background-color: #fff;
+    color: #333; /* تباين جيد عند التركيز */
+}
+
+/* Tags as checkboxes */
+.tags-checkboxes label {
+    display: flex;
+    align-items: center;
+    padding: 8px 14px;
+    background-color: #e9f0ff;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #333; /* تغيير اللون ليكون أكثر وضوح */
+    border: 1px solid #c9e0ff;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.tags-checkboxes input[type="checkbox"] {
+    margin-right: 6px;
+    accent-color: #007bff;
+}
+
+/* Save button */
+.btn-save {
+    width: 100%;
+    padding: 14px;
+    margin-top: 25px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-save:hover {
+    background-color: #005fcc;
+}
+
+/* Loading */
+.loading-state {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 20px;
+    color: #777;
+}
+
+.loading-state i {
+    margin-right: 10px;
+    font-size: 22px;
+}
+
+@media (max-width: 768px) {
+    .edit-container {
+        padding: 25px;
+        margin: 30px 20px;
+        border-radius: 16px;
+    }
+
+    .edit-container h1 {
+        font-size: 24px;
+    }
+
+    .edit-form label {
+        font-size: 14px;
+    }
+
+    .edit-form input,
+    .edit-form textarea,
+    .edit-form select {
+        font-size: 14px;
+        padding: 10px 12px;
+    }
+
+    .tags-checkboxes {
+        gap: 8px;
+    }
+
+    .tags-checkboxes label {
+        font-size: 13px;
+        padding: 6px 12px;
+    }
+
+    .btn-save {
+        padding: 12px;
+        font-size: 15px;
+    }
+
+    .loading-state {
+        font-size: 18px;
+    }
+}
